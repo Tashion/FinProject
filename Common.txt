@@ -1,0 +1,9 @@
+SLP-59526 : ClientAccount.dbo.spGetProductDetailsCash
+
+
+rfrRootCause: fuzzy query cause perfoemance issue and old table(CashLedgerTransactions) obsoleted
+rfrDelta: Split old porc into 2 new procs to remove fuzzy query  and replace old table CLT
+rfrAffected : performance issue
+rfrCodeStream: SLP_Dev
+CC 310034
+It's ready for release now
